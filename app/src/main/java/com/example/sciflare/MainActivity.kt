@@ -16,6 +16,7 @@ import androidx.recyclerview.widget.RecyclerView
 import coil.api.load
 import coil.transform.CircleCropTransformation
 import coil.transform.RoundedCornersTransformation
+import com.example.sciflare.database.UserLocalDatabase
 import com.example.sciflare.databinding.ActivityMainBinding
 import com.example.sciflare.databinding.DialogLayoutBinding
 import com.example.sciflare.network.RequestBodies
@@ -54,7 +55,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun setupViewModel() {
-        val repository = UserRepository()
+        val storyDao = UserLocalDatabase.getDatabase(this).storyDao()
+        val repository = UserRepository(storyDao)
         val factory = ViewModelProviderFactory(application, repository)
         viewModel = ViewModelProvider(this, factory)[UserViewModel::class.java]
         getUserDetails()

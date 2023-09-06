@@ -10,7 +10,7 @@ class RetrofitInstance {
 
     companion object {
 
-        private val retrofitPicsum by lazy {
+        private val retrofitUserDetails by lazy {
             val logging = HttpLoggingInterceptor()
             logging.setLevel(HttpLoggingInterceptor.Level.BODY)
             val client = OkHttpClient.Builder()
@@ -23,8 +23,8 @@ class RetrofitInstance {
                 .build()
         }
 
-        val picsumApi by lazy {
-            retrofitPicsum.create(API::class.java)
+        val userDetailsApi by lazy {
+            retrofitUserDetails.create(API::class.java)
         }
 
     }

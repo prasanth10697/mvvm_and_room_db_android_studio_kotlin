@@ -1,7 +1,6 @@
 package com.example.sciflare.network
 
 import com.example.sciflare.response.UserResponse
-import retrofit2.Call
 import retrofit2.Response
 import retrofit2.http.Body
 import retrofit2.http.DELETE
@@ -12,7 +11,7 @@ import retrofit2.http.Path
 interface API {
 
     @GET("prasanth")
-    suspend fun getPictures(): Response<UserResponse>
+    suspend fun getUserDetails(): Response<UserResponse>
 
     @POST("prasanth")
     suspend fun loginUser(@Body body:RequestBodies.LoginBody): Response<UserResponse>

@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+    id 'kotlin-kapt'
 }
 
 android {
@@ -76,5 +77,8 @@ dependencies {
     implementation 'com.google.android.gms:play-services-maps:17.0.0'
     implementation 'com.google.android.gms:play-services-location:17.0.0'
 
-
+    //room db
+    implementation 'androidx.room:room-runtime:2.3.0'
+    annotationProcessor "androidx.room:room-compiler:2.3.0"
+    kapt 'androidx.room:room-compiler:2.3.0'
 }

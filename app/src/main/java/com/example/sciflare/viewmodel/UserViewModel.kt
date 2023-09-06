@@ -34,6 +34,7 @@ class UserViewModel(
 
     private fun getUserDetails() = viewModelScope.launch {
         fetchUserDetails()
+        userRepository.fetchTheUserDetails()
     }
 
     fun addUser(body: RequestBodies.LoginBody) = viewModelScope.launch {

@@ -15,9 +15,6 @@ class ViewModelProviderFactory(
             return UserViewModel(app, userRepository) as T
         }
 
-       /* if (modelClass.isAssignableFrom(LoginViewModel::class.java)) {
-            return LoginViewModel(app, appRepository) as T
-        }*/
         throw IllegalArgumentException("Unknown class name")
     }
 
