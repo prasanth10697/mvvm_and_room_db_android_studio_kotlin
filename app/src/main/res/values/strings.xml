@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Sciflare</string>
+
+    <string name="map_key" translatable="false">Enter your google API key here</string>
+</resources>

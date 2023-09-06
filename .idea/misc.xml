@@ -1,0 +1,19 @@
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Sciflare/app/src/main/res/drawable/fill_brown_btn.xml" value="0.1535" />
+        <entry key="..\:/Sciflare/app/src/main/res/drawable/rectangle_boarder_grey.xml" value="0.1535" />
+        <entry key="..\:/Sciflare/app/src/main/res/layout/activity_main.xml" value="0.17255434782608695" />
+        <entry key="..\:/Sciflare/app/src/main/res/layout/dialog_box.xml" value="0.11614583333333334" />
+        <entry key="..\:/Sciflare/app/src/main/res/layout/dialog_negative_layout.xml" value="0.17255434782608695" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
